@@ -9,7 +9,7 @@ Name: %{name}
 Version: %{version}
 Release: %{release}
 # get the source from our cvs repository (see
-# http://www.linuxmandrake.com/en/cvs.php3)
+# http://cvs.mandriva.com/)
 Source0: %{name}-%{version}.tar.bz2
 License: GPL
 url: http://people.mandriva.com/~warly/files/mkcd/
