@@ -14,7 +14,6 @@ Source0: %{name}-%{version}.tar.bz2
 License: GPL
 url: http://people.mandriva.com/~warly/files/mkcd/
 Group: System/Configuration/Packaging
-BuildRoot: %{_tmppath}/%{name}-buildroot
 Prefix: %{_prefix}
 Requires: perl-File-NCopy perl-Image-Size perl-URPM
 BuildArch: noarch
