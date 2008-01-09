@@ -16,7 +16,7 @@ url: http://people.mandriva.com/~warly/files/mkcd/
 Group: System/Configuration/Packaging
 BuildRoot: %{_tmppath}/%{name}-buildroot
 Prefix: %{_prefix}
-Requires: perl-File-NCopy perl-Image-Size perl-URPM
+Requires: perl-File-NCopy perl-Image-Size perl-URPM packdrake
 BuildArch: noarch
 BuildRequires: libxslt-proc
 
