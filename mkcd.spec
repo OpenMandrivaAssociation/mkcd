@@ -1,22 +1,24 @@
 %define name mkcd
-%define version 4.2.6
+%define version 4.2.7
 %define release %mkrel 1
 %define _requires_exceptions perl(strict)
 %define _provides_exceptions perl(install_any)
 
-Summary: Script to build Linux distributions installation discs
+Summary: Script to build Mandriva Linux distributions installation discs
 Name: %{name}
 Version: %{version}
 Release: %{release}
-# get the source from our cvs repository (see
-# http://cvs.mandriva.com/)
+# get the source from our svn repository
+# svn.mandriva.com/build_system/mkcd/
 Source0: %{name}-%{version}.tar.bz2
 License: GPL
-url: http://people.mandriva.com/~warly/files/mkcd/
+URL: http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/mkcd/
 Group: System/Configuration/Packaging
 BuildRoot: %{_tmppath}/%{name}-buildroot
 Prefix: %{_prefix}
 Requires: perl-File-NCopy perl-Image-Size perl-URPM packdrake
+requires: mandriva-theme isolinux gfxboot rpmtools mandriva-gfxboot-theme
+requires: drakx-installer-stage2 drakx-installer-advertising drakx-installer-binaries
 BuildArch: noarch
 BuildRequires: libxslt-proc
 
@@ -39,8 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
-%doc README
+%doc README doc/
 %{_bindir}/*
 %{perl_vendorlib}/Mkcd
-
-
