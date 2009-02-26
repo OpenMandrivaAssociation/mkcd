@@ -1,5 +1,5 @@
 %define name mkcd
-%define version 4.2.9
+%define version 4.3.0
 %define release %mkrel 1
 %define _requires_exceptions perl(strict)
 %define _provides_exceptions perl(install_any)
