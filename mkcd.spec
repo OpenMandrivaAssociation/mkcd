@@ -13,7 +13,6 @@ License:	GPLv2
 URL:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/mkcd/
 Group:		System/Configuration/Packaging
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-Prefix:		%{_prefix}
 Requires:	perl-File-NCopy perl-Image-Size perl-URPM packdrake
 Requires:	isolinux gfxboot rpmtools
 Suggests:	mandriva-theme mandriva-gfxboot-theme
