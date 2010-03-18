@@ -1,6 +1,6 @@
 %define name mkcd
 %define version 4.3.0
-%define release %mkrel 4
+%define release %mkrel 5
 %define _requires_exceptions perl(strict)
 %define _provides_exceptions perl(install_any)
 
@@ -15,8 +15,9 @@ Group:		System/Configuration/Packaging
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 Prefix:		%{_prefix}
 Requires:	perl-File-NCopy perl-Image-Size perl-URPM packdrake
-requires:	mandriva-theme isolinux gfxboot rpmtools mandriva-gfxboot-theme
-requires:	drakx-installer-stage2 drakx-installer-advertising drakx-installer-binaries
+Requires:	isolinux gfxboot rpmtools
+Suggests:	mandriva-theme mandriva-gfxboot-theme
+Suggests:	drakx-installer-stage2 drakx-installer-advertising drakx-installer-binaries
 BuildArch:	noarch
 BuildRequires:	libxslt-proc
 
