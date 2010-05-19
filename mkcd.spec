@@ -1,6 +1,6 @@
 %define name mkcd
 %define version 4.3.0
-%define release %mkrel 5
+%define release %mkrel 6
 %define _requires_exceptions perl(strict)
 %define _provides_exceptions perl(install_any)
 
@@ -14,8 +14,8 @@ URL:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/mkcd/
 Group:		System/Configuration/Packaging
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 Requires:	perl-File-NCopy perl-Image-Size perl-URPM packdrake
-Requires:	isolinux gfxboot rpmtools
-Suggests:	mandriva-theme mandriva-gfxboot-theme
+Requires:	isolinux rpmtools
+Suggests:	gfxboot mandriva-theme mandriva-gfxboot-theme
 Suggests:	drakx-installer-stage2 drakx-installer-advertising drakx-installer-binaries
 BuildArch:	noarch
 BuildRequires:	libxslt-proc
