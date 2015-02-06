@@ -1,6 +1,6 @@
 %define name mkcd
 %define version 4.3.0
-%define release 7
+%define release 8
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl(strict)'
