@@ -12,7 +12,7 @@ Version:	4.3.0
 Release:	9
 Source0:	%{name}-%{version}.tar.bz2
 License:	GPLv2
-URL:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/mkcd/
+URL:		https://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/mkcd/
 Group:		System/Configuration/Packaging
 Requires:	perl-File-NCopy perl-Image-Size perl-URPM packdrake
 Requires:	isolinux rpmtools
