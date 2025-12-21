@@ -19,6 +19,7 @@ Requires:	isolinux rpmtools
 Suggests:	gfxboot mandriva-theme rosa-gfxboot-theme
 Suggests:	drakx-installer-stage2 drakx-installer-advertising drakx-installer-binaries
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	libxslt-proc
 
 %description
